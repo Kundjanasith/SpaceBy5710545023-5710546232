@@ -14,9 +14,6 @@
         "src/resource.js",
         "src/GameLayer.js",
         "src/Ship.js",
-        "src/NormalBullet.js",
-        "src/FastBullet.js",
-        "src/WaveBullet.js",
         "src/Bullet.js"
     ]
 }
