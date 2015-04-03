@@ -1,4 +1,5 @@
 var WaveBullet = cc.Sprite.extend({
+    
     ctor: function() {
         this._super();
         this.initWithFile( 'res/images/bullet.png' );
@@ -17,4 +18,5 @@ var WaveBullet = cc.Sprite.extend({
         var y = 10 + Math.floor( Math.random() * ( screenHeight - 10 ) );
         this.setPosition( new cc.Point( 100, y ) );
     }
+
 });

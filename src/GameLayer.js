@@ -12,7 +12,7 @@ var GameLayer = cc.LayerColor.extend({
             var p = Math.random();
             var bullet = null; 
             if ( p <= 0.4) {
-                bullet = new Bullet();
+                bullet = new NormalBullet();
             } else if ( p <= 0.7 ) {
                 bullet = new FastBullet();
             } else {
@@ -27,7 +27,7 @@ var GameLayer = cc.LayerColor.extend({
         }
 
         this.life = 10;
-        this.lifeLabel = cc.LabelTTF.create( 10, 'Arial', 32 );
+        this.lifeLabel = cc.LabelTTF.create( this.life , 'Arial', 32 );
         this.lifeLabel.setPosition( cc.p( 700, 550 ) );
         this.addChild( this.lifeLabel );
         
